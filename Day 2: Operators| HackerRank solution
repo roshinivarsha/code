@@ -1,0 +1,26 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+public class Solution {
+    public static void main(String[] args)
+    {
+        
+        Scanner sc=new Scanner(System.in);
+        double mealcost=sc.nextDouble();
+        int tippercent=sc.nextInt();
+        int taxpercent = sc.nextInt();
+    
+        double tip= (mealcost * tippercent/100);
+        double tax= (taxpercent * tippercent/100);
+        int totalcost=(int)Math.round(mealcost+tip+tax);
+        System.out.println(totalcost);
+    
+        
+    }
+}
